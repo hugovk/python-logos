@@ -32,21 +32,67 @@
       <h1 class="jumbotron-heading">Python logos</h1>
       <p class="lead text-muted">A selection of some of the best Python logos.</p>
       <p>
-        <a href="#geographical" class="btn btn-secondary my-2">Geographical</a>
+        <a href="#africa" class="btn btn-secondary my-2">Africa</a>
+        <a href="#asia" class="btn btn-secondary my-2">Asia</a>
+        <a href="#europe" class="btn btn-secondary my-2">Europe</a>
+        <a href="#rest-of-world" class="btn btn-secondary my-2">Rest of world</a>
         <a href="#other" class="btn btn-secondary my-2">Other</a>
       </p>
     </div>
   </section>
 
-  <section class="text-center" id="geographical">
+  <section class="text-center" id="africa">
     <div class="container">
-      <h2>Geographical</h2>
+      <h2>Africa</h2>
     </div>
   </section>
 
   <div class="album py-5 bg-light">
     <div class="container">
-      <div id="geo-logo-row" class="row">
+      <div id="africa-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center" id="asia">
+    <div class="container">
+      <h2>Asia</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="asia-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+
+  <section class="text-center" id="europe">
+    <div class="container">
+      <h2>Europe</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="europe-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center" id="rest-of-world">
+    <div class="container">
+      <h2>Rest of world</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="rest-of-world-logo-row" class="row">
         <!--logos go here-->
       </div>
     </div>
@@ -90,36 +136,41 @@
   var original_logos=[
     {"name": "Python", "filename": "Python.png", "home": "https://www.python.org/community/logos/", "twitter": "ThePSF"},
   ];
-  var geo_logos=[
-    {"name": "EuroPython 2018 Edinburgh", "filename": "EuroPython 2018 Edinburgh.jpg", "home": "https://ep2018.europython.eu/en/", "twitter": "europython"},
-    {"name": "EuroPython Society", "filename": "EuroPython Society.png", "home": "https://www.europython-society.org/", "twitter": "europythons"},
-    {"name": "New Zealand Python User Group", "filename": "New Zealand Python User Group.png", "home": "https://python.nz/", "twitter": "NZPUG"},
-    {"name": "PiterPy Saint Petersburg", "filename": "PiterPy Saint Petersburg.jpg", "home": "https://piterpy.com/", "twitter": "PiterPy"},
-    {"name": "PyCon Australia", "filename": "PyCon Australia.jpg", "home": "http://pycon-au.org", "twitter": "pyconau"},
-    {"name": "PyCon Ghana", "filename": "PyCon Ghana.jpg", "home": "https://gh.pycon.org/", "twitter": "PyconGhana"},
+  var asia_logos=[
     {"name": "PyCon India", "filename": "PyCon India.jpg", "home": "https://in.pycon.org/", "twitter": "pyconindia"},
     {"name": "PyCon Israel", "filename": "PyCon Israel.png", "home": "https://il.pycon.org/", "twitter": "pyconil"},
     {"name": "PyCon Korea", "filename": "PyCon Korea.png", "home": "https://www.pycon.kr/2017/", "twitter": "pyconkr"},
     {"name": "PyCon Kyrgyzstan", "filename": "PyCon Kyrgyzstan.png", "home": "https://pyconkg.com/"},
-    {"name": "PyCon Lithuania", "filename": "PyCon Lithuania.png", "home": "https://www.pycon.lt/", "twitter": "PyConLT"},
     {"name": "PyCon MY", "filename": "PyCon MY.png", "home": "https://pycon.my/", "twitter": "pyconmy"},
-    {"name": "PyCon Nigeria", "filename": "PyCon Nigeria.jpg", "home": "https://pycon.ng/", "twitter": "pyconnigeria"},
     {"name": "PyCon Pakistan", "filename": "PyCon Pakistan.jpg", "home": "http://pycon.pk/", "twitter": "pyconpk"},
-    {"name": "PyCon PL", "filename": "PyCon PL.png", "home": "https://pl.pycon.org/", "twitter": "pyconpl"},
-    {"name": "PyCon Slovakia 2017", "filename": "PyCon Slovakia 2017.svg", "home": "https://2017.pycon.sk/", "twitter": "pyconsk"},
-    {"name": "PyCon Slovakia 2018", "filename": "PyCon Slovakia 2018.svg", "home": "https://2018.pycon.sk/", "twitter": "pyconsk"},
-    {"name": "PyCon Sweden", "filename": "PyCon Sweden.png", "home": "https://pycon.se/", "twitter": "pyconse"},
     {"name": "PyCon Thailand", "filename": "PyCon Thailand.svg", "home": "https://th.pycon.org/", "twitter": "pyconthailand"},
-    {"name": "PyCon UK", "filename": "PyCon UK.svg", "home": "http://pyconuk.org/", "twitter": "PyConUK"},
+    {"name": "PySangamam Tamilnadu", "filename": "PySangamam Tamilnadu.jpg", "home": "https://pysangamam.org/blog/2018/09/10/logo-essence/", "twitter": "PySangamam"},
+  ];
+  var africa_logos=[
+    {"name": "PyCon Ghana", "filename": "PyCon Ghana.jpg", "home": "https://gh.pycon.org/", "twitter": "PyconGhana"},
+    {"name": "PyCon Nigeria", "filename": "PyCon Nigeria.jpg", "home": "https://pycon.ng/", "twitter": "pyconnigeria"},
     {"name": "PyCon Zimbabwe 2016", "filename": "PyCon Zimbabwe 2016.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
     {"name": "PyCon Zimbabwe 2017", "filename": "PyCon Zimbabwe 2017.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
     {"name": "PyCon Zimbabwe 2018", "filename": "PyCon Zimbabwe 2018.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
     {"name": "PyConKE", "filename": "PyConKE.svg", "home": "https://www.pycon.or.ke/", "twitter": "pynbo"},
     {"name": "PyConZA", "filename": "PyConZA.png", "home": "https://za.pycon.org/", "twitter": "pyconza"},
-    {"name": "PySangamam Tamilnadu", "filename": "PySangamam Tamilnadu.jpg", "home": "https://pysangamam.org/blog/2018/09/10/logo-essence/", "twitter": "PySangamam"},
+  ];
+  var europe_logos=[
+    {"name": "EuroPython 2018 Edinburgh", "filename": "EuroPython 2018 Edinburgh.jpg", "home": "https://ep2018.europython.eu/en/", "twitter": "europython"},
+    {"name": "EuroPython Society", "filename": "EuroPython Society.png", "home": "https://www.europython-society.org/", "twitter": "europythons"},
+    {"name": "PiterPy Saint Petersburg", "filename": "PiterPy Saint Petersburg.jpg", "home": "https://piterpy.com/", "twitter": "PiterPy"},
+    {"name": "PyCon Lithuania", "filename": "PyCon Lithuania.png", "home": "https://www.pycon.lt/", "twitter": "PyConLT"},
+    {"name": "PyCon PL", "filename": "PyCon PL.png", "home": "https://pl.pycon.org/", "twitter": "pyconpl"},
+    {"name": "PyCon Slovakia 2017", "filename": "PyCon Slovakia 2017.svg", "home": "https://2017.pycon.sk/", "twitter": "pyconsk"},
+    {"name": "PyCon Slovakia 2018", "filename": "PyCon Slovakia 2018.svg", "home": "https://2018.pycon.sk/", "twitter": "pyconsk"},
+    {"name": "PyCon Sweden", "filename": "PyCon Sweden.png", "home": "https://pycon.se/", "twitter": "pyconse"},
+    {"name": "PyCon UK", "filename": "PyCon UK.svg", "home": "http://pyconuk.org/", "twitter": "PyConUK"},
+  ];
+  var rest_of_world_logos=[
+    {"name": "New Zealand Python User Group", "filename": "New Zealand Python User Group.png", "home": "https://python.nz/", "twitter": "NZPUG"},
+    {"name": "PyCon Australia", "filename": "PyCon Australia.jpg", "home": "http://pycon-au.org", "twitter": "pyconau"},
     {"name": "PythonDay México", "filename": "PythonDay México.jpg", "home": "http://pythonday.mx/", "twitter": "pythondaymx"},
   ];
-
   var other_logos=[
     {"name": "mwclient", "filename": "mwclient.svg", "home": "https://github.com/mwclient/mwclient"},
     {"name": "Pillow", "filename": "Pillow.png", "home": "https://python-pillow.org/", "twitter": "pythonpillow"},
@@ -165,7 +216,10 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
     });
   }
 
-  addLogos(geo_logos, '#geo-logo-row');
+  addLogos(asia_logos, '#asia-logo-row');
+  addLogos(africa_logos, '#africa-logo-row');
+  addLogos(europe_logos, '#europe-logo-row');
+  addLogos(rest_of_world_logos, '#rest-of-world-logo-row');
   addLogos(other_logos, '#other-logo-row');
 </script>
 <script>
@@ -173,8 +227,14 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
     Array.prototype.getRandomVal = function(){
       return this[Math.floor(Math.random()*this.length)];
     };
-    // var favicons = [...geo_logos, ...other_logos]; // ES6
-    var favicons = original_logos.concat(geo_logos, other_logos); // ES5
+    var favicons = [
+      ...original_logos,
+      ...africa_logos,
+      ...asia_logos,
+      ...europe_logos,
+      ...rest_of_world_logos,
+      ...other_logos,
+    ];
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
     link.rel = 'shortcut icon';

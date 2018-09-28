@@ -7,6 +7,6 @@ A selection of some of the best Python logos.
 To add a new logo:
 
 * Put the image file in the `/img` directory
-* Edit `index.html` and add a new alphabetical entry in `geo_logos` or `other_logos`
+* Edit `index.html` and add a new alphabetical entry in one of `asia_logos` etc.
 
 Based on the [Bootstrap album example](https://getbootstrap.com/docs/4.0/examples/album/).

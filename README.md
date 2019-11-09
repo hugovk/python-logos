@@ -4,6 +4,10 @@ A selection of some of the best Python logos.
 
 <a href="https://hugovk.github.io/python-logos/">https://hugovk.github.io/python-logos/</a>
 
+And PyLadies.
+
+<a href="https://hugovk.github.io/python-logos/pyladies/">https://hugovk.github.io/python-logos/pyladies/</a>
+
 To add a new logo:
 
 * Put the image file in the `/img` directory

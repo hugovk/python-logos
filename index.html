@@ -40,6 +40,7 @@
         <a href="#africa" class="btn btn-secondary my-2">Africa</a>
         <a href="#asia" class="btn btn-secondary my-2">Asia</a>
         <a href="#europe" class="btn btn-secondary my-2">Europe</a>
+        <a href="#south-america" class="btn btn-secondary my-2">South America</a>
         <a href="#rest-of-world" class="btn btn-secondary my-2">Rest of world</a>
         <a href="#other" class="btn btn-secondary my-2">Other</a>
       </p>
@@ -84,6 +85,20 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div id="europe-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center" id="south-america">
+    <div class="container">
+      <h2>South America</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="south-america-logo-row" class="row">
         <!--logos go here-->
       </div>
     </div>
@@ -190,16 +205,18 @@
     {"name": "Python Milano", "filename": "Python Milano.png", "home": "http://milano.python.it/", "twitter": "PythonMilano"},
     {"name": "Swiss Python Summit", "filename": "Swiss Python Summit.svg", "home": "https://www.python-summit.ch/", "twitter": "pythonsummit"},
   ];
-  var rest_of_world_logos=[
+  var south_america_logos=[
     {"name": "Caipyra São Carlos", "filename": "Caipyra São Carlos.png", "home": "http://caipyra.python.org.br/"},
     {"name": "Grupo de Usuários de Python no Distrito Federal", "filename": "Grupo de Usuários de Python no Distrito Federal.png", "home": "http://df.python.org.br/", "twitter": "grupydf"},
     {"name": "Grupo de Usuário Python do Norte do Brasil", "filename": "Grupo de Usuário Python do Norte do Brasil.png", "home": "http://pynorte.python.org.br/", "twitter": "PyNorte"},
-    {"name": "New Zealand Python User Group", "filename": "New Zealand Python User Group.png", "home": "https://python.nz/", "twitter": "NZPUG"},
-    {"name": "PyCon Australia", "filename": "PyCon Australia.jpg", "home": "http://pycon-au.org", "twitter": "pyconau"},
     {"name": "PyCon Latam", "filename": "PyCon Latam.png", "home": "https://www.pylatam.org/", "twitter": "PyLatam"},
-    {"name": "PyMX", "filename": "PyMX.jpg", "home": "https://www.meetup.com/__PyMX__/", "twitter": "__PyMX__"},
     {"name": "Python Cartagena de Indias", "filename": "Python Cartagena de Indias.png", "home": "https://www.facebook.com/pythonctg/"},
     {"name": "Python Cúcuta", "filename": "Python Cúcuta.jpg", "home": "https://www.facebook.com/PythonCucuta/", "twitter": "pythoncucuta"},
+  ];
+  var rest_of_world_logos=[
+    {"name": "New Zealand Python User Group", "filename": "New Zealand Python User Group.png", "home": "https://python.nz/", "twitter": "NZPUG"},
+    {"name": "PyCon Australia", "filename": "PyCon Australia.jpg", "home": "http://pycon-au.org", "twitter": "pyconau"},
+    {"name": "PyMX", "filename": "PyMX.jpg", "home": "https://www.meetup.com/__PyMX__/", "twitter": "__PyMX__"},
     {"name": "PythonDay México 2017", "filename": "PythonDay México 2017.jpg", "home": "http://pythonday.mx/", "twitter": "pythondaymx"},
     {"name": "PythonDay México 2018", "filename": "PythonDay México 2018.png", "home": "http://pythonday.mx/", "twitter": "pythondaymx"},
   ];
@@ -253,6 +270,7 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
   addLogos(africa_logos, '#africa-logo-row');
   addLogos(europe_logos, '#europe-logo-row');
   addLogos(rest_of_world_logos, '#rest-of-world-logo-row');
+  addLogos(south_america_logos, '#south-america-logo-row');
   addLogos(other_logos, '#other-logo-row');
 </script>
 <script>
@@ -266,6 +284,7 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
       ...asia_logos,
       ...europe_logos,
       ...rest_of_world_logos,
+      ...south_america_logos,
       ...other_logos,
     ];
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');

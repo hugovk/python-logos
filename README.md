@@ -1,8 +1,10 @@
 # Python logos
 
-A selection of some of the best Python logos.
+A selection of some of the best Python and PyLadies logos.
 
-<a href="https://hugovk.github.io/python-logos/">https://hugovk.github.io/python-logos/</a>
+* <a href="https://hugovk.github.io/python-logos/">https://hugovk.github.io/python-logos/</a>
+
+* <a href="https://hugovk.github.io/python-logos/pyladies/">https://hugovk.github.io/python-logos/pyladies/</a>
 
 To add a new logo:
 

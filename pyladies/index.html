@@ -38,10 +38,10 @@
       <p class="lead text-muted">A selection of some of the best PyLadies and <a href="../index.html">Python</a> logos.</p>
       <p>
         <a href="#africa" class="btn btn-secondary my-2">Africa</a>
-        <a href="#americas" class="btn btn-secondary my-2">Americas</a>
         <a href="#asia" class="btn btn-secondary my-2">Asia</a>
         <a href="#europe" class="btn btn-secondary my-2">Europe</a>
-        <a href="#other" class="btn btn-secondary my-2">Other</a>
+        <a href="#north-america" class="btn btn-secondary my-2">North America</a>
+        <a href="#south-america" class="btn btn-secondary my-2">South America</a>
       </p>
     </div>
   </section>
@@ -55,20 +55,6 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div id="africa-logo-row" class="row">
-        <!--logos go here-->
-      </div>
-    </div>
-  </div>
-
-  <section class="text-center" id="americas">
-    <div class="container">
-      <h2>Americas</h2>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div id="americas-logo-row" class="row">
         <!--logos go here-->
       </div>
     </div>
@@ -103,6 +89,34 @@
     </div>
   </div>
 
+  <section class="text-center" id="north-america">
+    <div class="container">
+      <h2>North America</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="north-america-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center" id="south-america">
+    <div class="container">
+      <h2>South America</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="south-america-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <footer class="text-muted">
@@ -132,20 +146,6 @@
     {"name": "Ghana", "filename": "PyladiesGhana.jpg", "home": "https://ghana.pyladies.com/", "twitter": "pyconnigeria"},
     {"name": "Lautech", "filename": "PyladiesLautech.jpg", "twitter": "PyladiesLautech"},
   ];
-  var americas_logos=[
-    {"name": "Belém, Brazil", "filename": "PyLadiesBelém.png", "home": "https://www.facebook.com/pyladiesbelem"},
-    {"name": "Caxias do Sul, Brazil", "filename": "PyladiesCaxias.jpg", "home": "https://pyladiescaxias.github.io/", "twitter": "https://twitter.com/PyladiesAracati"},
-    {"name": "Maceió, Brazil", "filename": "PyLadiesMaceio.png", "home": "https://www.facebook.com/PyLadiesMaceio/", "twitter": "pyladiesmaceio"},
-    {"name": "Manaus, Brazil", "filename": "pyladiesmanaus.png", "home": "https://www.facebook.com/pyladiesmanaus/", "twitter": "pyladiesmanaus"},
-    {"name": "Mexico City", "filename": "MxPyladies.jpg", "home": "https://www.meetup.com/Mexico-City-Pyladies-Meetup/", "twitter": "MxPyladies"},
-    {"name": "Recife, Brazil", "filename": "pyladiesrecife.png", "home": "https://linktr.ee/pyladiesrecife", "twitter": "pyladies_recife"},
-    {"name": "Salvador, Brazil", "filename": "pyladies-salvador.png", "home": "https://pyladiessalvador.github.io/", "twitter": "pyladiessa"},
-    {"name": "Salvador, Brazil", "filename": "pyladiessalvador.png", "home": "https://pyladiessalvador.github.io/", "twitter": "pyladiessa"},
-    {"name": "Sergipe, Brazil", "filename": "pyladies_sergipe.svg", "home": "https://www.instagram.com/pyladiessergipe/"},
-    {"name": "Silicon Valley, USA", "filename": "siliconvalley.png", "home": "https://www.meetup.com/PyLadies-Silicon-Valley/"},
-    {"name": "Teresina, Brazil", "filename": "pyladiesteresina.png", "home": "https://pyladiesteresina.github.io/", "twitter": "pyladiesthe"},
-    {"name": "Vale Do Paraiba, Brazil", "filename": "pyladiesvale.png", "home": "http://vale.pyladies.com/", "twitter": "pyladiesvale"},
-  ];
   var asia_logos=[
     {"name": "Chennai", "filename": "PyLadiesChennai.png", "home": "https://www.meetup.com/pyladieschennai/", "twitter": "pyladieschennai"},
     {"name": "Taiwan", "filename": "twgirl_logo.png", "home": "https://tw.pyladies.com/", "twitter": "PyLadiesTW"},
@@ -155,6 +155,22 @@
     {"name": "Dublin, Ireland", "filename": "PyLadiesDublin.jpg", "home": "https://www.meetup.com/PyLadiesDublin/", "twitter": "pyladiesDub"},
     {"name": "Kazan, Russia", "filename": "pyladieskzn.png", "home": "https://www.facebook.com/pyladieskzn", "twitter": "pyladieskzn"},
     {"name": "Saint Petersburg, Russia", "filename": "pyladies_spb.png", "home": "http://spb.pyladies.com/", "twitter": "pyladies_spb"},
+  ];
+  var north_america_logos=[
+    {"name": "Mexico City", "filename": "MxPyladies.jpg", "home": "https://www.meetup.com/Mexico-City-Pyladies-Meetup/", "twitter": "MxPyladies"},
+    {"name": "Silicon Valley, USA", "filename": "siliconvalley.png", "home": "https://www.meetup.com/PyLadies-Silicon-Valley/"},
+  ];
+  var south_america_logos=[
+    {"name": "Belém, Brazil", "filename": "PyLadiesBelém.png", "home": "https://www.facebook.com/pyladiesbelem"},
+    {"name": "Caxias do Sul, Brazil", "filename": "PyladiesCaxias.jpg", "home": "https://pyladiescaxias.github.io/", "twitter": "https://twitter.com/PyladiesAracati"},
+    {"name": "Maceió, Brazil", "filename": "PyLadiesMaceio.png", "home": "https://www.facebook.com/PyLadiesMaceio/", "twitter": "pyladiesmaceio"},
+    {"name": "Manaus, Brazil", "filename": "pyladiesmanaus.png", "home": "https://www.facebook.com/pyladiesmanaus/", "twitter": "pyladiesmanaus"},
+    {"name": "Recife, Brazil", "filename": "pyladiesrecife.png", "home": "https://linktr.ee/pyladiesrecife", "twitter": "pyladies_recife"},
+    {"name": "Salvador, Brazil", "filename": "pyladies-salvador.png", "home": "https://pyladiessalvador.github.io/", "twitter": "pyladiessa"},
+    {"name": "Salvador, Brazil", "filename": "pyladiessalvador.png", "home": "https://pyladiessalvador.github.io/", "twitter": "pyladiessa"},
+    {"name": "Sergipe, Brazil", "filename": "pyladies_sergipe.svg", "home": "https://www.instagram.com/pyladiessergipe/"},
+    {"name": "Teresina, Brazil", "filename": "pyladiesteresina.png", "home": "https://pyladiesteresina.github.io/", "twitter": "pyladiesthe"},
+    {"name": "Vale Do Paraiba, Brazil", "filename": "pyladiesvale.png", "home": "http://vale.pyladies.com/", "twitter": "pyladiesvale"},
   ];
 
   function shuffle(array) {
@@ -197,9 +213,10 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
   }
 
   addLogos(africa_logos, '#africa-logo-row');
-  addLogos(americas_logos, '#americas-logo-row');
   addLogos(asia_logos, '#asia-logo-row');
   addLogos(europe_logos, '#europe-logo-row');
+  addLogos(north_america_logos, '#north-america-logo-row');
+  addLogos(south_america_logos, '#south-america-logo-row');
 </script>
 <script>
   (function() {
@@ -209,9 +226,10 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
     var favicons = [
       // ...original_logos,
       ...africa_logos,
-      ...americas_logos,
       ...asia_logos,
       ...europe_logos,
+      ...north_america_logos,
+      ...south_america_logos,
     ];
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';

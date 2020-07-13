@@ -42,6 +42,7 @@
         <a href="#europe" class="btn btn-secondary my-2">Europe</a>
         <a href="#north-america" class="btn btn-secondary my-2">North America</a>
         <a href="#south-america" class="btn btn-secondary my-2">South America</a>
+        <a href="#rest-of-world" class="btn btn-secondary my-2">Rest of world</a>
       </p>
     </div>
   </section>
@@ -112,6 +113,20 @@
   <div class="album py-5 bg-light">
     <div class="container">
       <div id="south-america-logo-row" class="row">
+        <!--logos go here-->
+      </div>
+    </div>
+  </div>
+
+  <section class="text-center" id="rest-of-world">
+    <div class="container">
+      <h2>Rest of world</h2>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div id="rest-of-world-logo-row" class="row">
         <!--logos go here-->
       </div>
     </div>
@@ -188,6 +203,9 @@
     {"name": "Teresina, Brazil", "filename": "pyladiesteresina.png", "home": "https://pyladiesteresina.github.io/", "twitter": "pyladiesthe"},
     {"name": "Vale Do Paraiba, Brazil", "filename": "pyladiesvale.png", "home": "http://vale.pyladies.com/", "twitter": "pyladiesvale"},
   ];
+  var rest_of_world_logos=[
+    {"name": "Remote", "filename": "remote-logo.svg", "home": "https://remote.pyladies.com/", "twitter": "PyLadiesRemote"},
+  ];
 
   function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
@@ -232,6 +250,7 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
   addLogos(asia_logos, '#asia-logo-row');
   addLogos(europe_logos, '#europe-logo-row');
   addLogos(north_america_logos, '#north-america-logo-row');
+  addLogos(rest_of_world_logos, '#rest-of-world-logo-row');
   addLogos(south_america_logos, '#south-america-logo-row');
 </script>
 <script>
@@ -245,6 +264,7 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
       ...asia_logos,
       ...europe_logos,
       ...north_america_logos,
+      ...rest_of_world_logos,
       ...south_america_logos,
     ];
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');

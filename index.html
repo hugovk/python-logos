@@ -246,6 +246,7 @@
     {"name": "IndyPy", "filename": "indypy.png", "home": "https://indypy.org/", "twitter": "indypy"},
     {"name": "Kiwi PyCon", "filename": "kiwipycon.png", "home": "https://kiwipycon.nz/", "twitter": "kiwipycon"},
     {"name": "New Zealand Python User Group", "filename": "New Zealand Python User Group.png", "home": "https://python.nz/", "twitter": "NZPUG"},
+    {"name": "North Bay Python", "filename": "north-bay-python.svg", "home": "https://northbaypython.org/", "mastodon": "https://floss.social/@northbaypython"},
     {"name": "PyCon Australia", "filename": "PyCon Australia.jpg", "home": "http://pycon-au.org", "twitter": "pyconau"},
     {"name": "PyMX", "filename": "PyMX.jpg", "home": "https://www.meetup.com/__PyMX__/", "twitter": "__PyMX__"},
     {"name": "PythonDay México 2017", "filename": "PythonDay México 2017.jpg", "home": "http://pythonday.mx/", "twitter": "pythondaymx"},
@@ -295,6 +296,7 @@
             <p class="card-text">${item.name}</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
+${item.mastodon ? '<a class="btn btn-outline-secondary" role="button" href="' + item.mastodon + '">Mastodon</a></div>' : ''}
 ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https://twitter.com/' + item.twitter + '">Twitter</a></div>' : ''}
               </div>
             </div>

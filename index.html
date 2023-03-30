@@ -23,7 +23,7 @@
   <meta property="og:image:width" content="1150" />
   <meta property="og:image:height" content="1150" />
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/album.css" rel="stylesheet">
@@ -148,15 +148,32 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script>
 
-  var original_logos=[
+  const original_logos=[
     {"name": "Python", "filename": "Python.png", "home": "https://www.python.org/community/logos/", "twitter": "ThePSF"},
   ];
-  var asia_logos=[
+  const africa_logos=[
+    {"name": "PyCon Ghana", "filename": "PyCon Ghana.jpg", "home": "https://gh.pycon.org/", "twitter": "PyconGhana"},
+    {"name": "PyCon Namibia", "filename": "PyCon Namibia.png", "home": "https://na.pycon.org/", "twitter": "PyConNA"},
+    {"name": "PyCon Nigeria", "filename": "PyCon Nigeria.jpg", "home": "https://pycon.ng/", "twitter": "pyconnigeria"},
+    {"name": "PyCon Tanzania 2019", "filename": "PyCon Tanzania 2019.png", "home": "https://pycon.or.tz/2019/", "twitter": "PyconTanzania"},
+    {"name": "PyCon Tanzania 2022", "filename": "PyCon Tanzania 2022.png", "home": "https://pycon.or.tz/", "twitter": "PyconTanzania"},
+    {"name": "PyCon Zimbabwe 2016", "filename": "PyCon Zimbabwe 2016.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
+    {"name": "PyCon Zimbabwe 2017", "filename": "PyCon Zimbabwe 2017.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
+    {"name": "PyCon Zimbabwe 2018", "filename": "PyCon Zimbabwe 2018.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
+    {"name": "PyConKE", "filename": "PyConKE.svg", "home": "https://www.pycon.or.ke/", "twitter": "pynbo"},
+    {"name": "PyConZA 2016", "filename": "PyConZA 2016.png", "home": "https://2016.za.pycon.org/", "twitter": "pyconza"},
+    {"name": "PyConZA 2017", "filename": "PyConZA 2017.png", "home": "https://2017.za.pycon.org/", "twitter": "pyconza"},
+    {"name": "PyConZA 2019", "filename": "PyConZA 2019.png", "home": "https://2019.za.pycon.org/", "twitter": "pyconza"},
+    {"name": "PyConZA", "filename": "PyConZA.png", "home": "https://za.pycon.org/", "twitter": "pyconza"},
+    {"name": "Python Cameroun", "filename": "Python Cameroun.jpg", "home": "https://py-cm.org/", "twitter": "PythonCameroun"},
+    {"name": "Python Canarias", "filename": "Python Canarias.jpg", "home": "https://pythoncanarias.es/", "twitter": "pythoncanarias"},
+    {"name": "Python Côte d'Ivoire", "filename": "Python Côte d'Ivoire.png", "home": "https://www.facebook.com/PythonCI/"},
+    {"name": "Python Mauritius User Group", "filename": "pymug.svg", "home": "https://www.pymug.com/"},
+  ];
+  const asia_logos=[
     {"name": "PyCon China", "filename": "PyCon China.png", "home": "https://cn.pycon.org/", "twitter": "PyConChina"},
     {"name": "PyCon India 2018", "filename": "PyCon India 2018.jpg", "home": "https://in.pycon.org/2018/", "twitter": "pyconindia"},
     {"name": "PyCon India 2019", "filename": "PyCon India 2019.png", "home": "https://in.pycon.org/2019/", "twitter": "pyconindia"},
@@ -176,27 +193,7 @@
     {"name": "Python Philippines", "filename": "Python Philippines.png", "home": "https://python.ph/", "twitter": "pythonph"},
     {"name": "Python Indonesia", "filename": "Python Indonesia.png", "home": "https://www.python.or.id/", "twitter": "id_python"},
   ];
-
-  var africa_logos=[
-    {"name": "PyCon Ghana", "filename": "PyCon Ghana.jpg", "home": "https://gh.pycon.org/", "twitter": "PyconGhana"},
-    {"name": "PyCon Namibia", "filename": "PyCon Namibia.png", "home": "https://na.pycon.org/", "twitter": "PyConNA"},
-    {"name": "PyCon Nigeria", "filename": "PyCon Nigeria.jpg", "home": "https://pycon.ng/", "twitter": "pyconnigeria"},
-    {"name": "PyCon Tanzania 2019", "filename": "PyCon Tanzania 2019.png", "home": "https://pycon.or.tz/2019/", "twitter": "PyconTanzania"},
-    {"name": "PyCon Tanzania 2022", "filename": "PyCon Tanzania 2022.png", "home": "https://pycon.or.tz/", "twitter": "PyconTanzania"},
-    {"name": "PyCon Zimbabwe 2016", "filename": "PyCon Zimbabwe 2016.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
-    {"name": "PyCon Zimbabwe 2017", "filename": "PyCon Zimbabwe 2017.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
-    {"name": "PyCon Zimbabwe 2018", "filename": "PyCon Zimbabwe 2018.jpg", "home": "https://zw.pycon.org/", "twitter": "pycon_zim"},
-    {"name": "PyConKE", "filename": "PyConKE.svg", "home": "https://www.pycon.or.ke/", "twitter": "pynbo"},
-    {"name": "PyConZA 2016", "filename": "PyConZA 2016.png", "home": "https://2016.za.pycon.org/", "twitter": "pyconza"},
-    {"name": "PyConZA 2017", "filename": "PyConZA 2017.png", "home": "https://2017.za.pycon.org/", "twitter": "pyconza"},
-    {"name": "PyConZA 2019", "filename": "PyConZA 2019.png", "home": "https://2019.za.pycon.org/", "twitter": "pyconza"},
-    {"name": "PyConZA", "filename": "PyConZA.png", "home": "https://za.pycon.org/", "twitter": "pyconza"},
-    {"name": "Python Cameroun", "filename": "Python Cameroun.jpg", "home": "https://py-cm.org/", "twitter": "PythonCameroun"},
-    {"name": "Python Canarias", "filename": "Python Canarias.jpg", "home": "https://pythoncanarias.es/", "twitter": "pythoncanarias"},
-    {"name": "Python Côte d'Ivoire", "filename": "Python Côte d'Ivoire.png", "home": "https://www.facebook.com/PythonCI/"},
-    {"name": "Python Mauritius User Group", "filename": "pymug.svg", "home": "https://www.pymug.com/"},
-  ];
-  var europe_logos=[
+  const europe_logos=[
     {"name": "EuroPython 2015 Bilbao", "filename": "EuroPython 2015 Bilbao.png", "home": "https://web.archive.org/web/20190121200427/https://ep2015.europython.eu/en/", "twitter": "europython"},
     {"name": "EuroPython 2016 Bilbao", "filename": "EuroPython 2016 Bilbao.jpg", "home": "https://ep2016.europython.eu/en/", "twitter": "europython"},
     {"name": "EuroPython 2017 Rimini", "filename": "EuroPython 2017 Rimini.jpg", "home": "https://ep2017.europython.eu/en/", "twitter": "europython"},
@@ -227,7 +224,7 @@
     {"name": "Python Valencia", "filename": "Python Valencia.png", "home": "https://www.meetup.com/es-ES/Python-Valencia-Meetup/", "twitter": "python_vlc"},
     {"name": "Swiss Python Summit", "filename": "Swiss Python Summit.svg", "home": "https://www.python-summit.ch/", "twitter": "pythonsummit"},
   ];
-  var south_america_logos=[
+  const south_america_logos=[
     {"name": "Caipyra São Carlos", "filename": "Caipyra São Carlos.png", "home": "http://caipyra.python.org.br/"},
     {"name": "Grupo de Usuários de Python no Distrito Federal", "filename": "Grupo de Usuários de Python no Distrito Federal.png", "home": "http://df.python.org.br/", "twitter": "grupydf"},
     {"name": "Grupo de Usuário Python do Norte do Brasil", "filename": "Grupo de Usuário Python do Norte do Brasil.png", "home": "http://pynorte.python.org.br/", "twitter": "PyNorte"},
@@ -241,7 +238,7 @@
     {"name": "Python Brasil 2020", "filename": "Python Brasil 2020.png", "home": "https://2020.pythonbrasil.org.br/", "twitter": "pythonbrasil"},
     {"name": "Python Brasil 2021", "filename": "Python Brasil 2021.png", "home": "https://2021.pythonbrasil.org.br/", "twitter": "pythonbrasil"},
   ];
-  var rest_of_world_logos=[
+  const rest_of_world_logos=[
     {"name": "Atlanta Python Programmers Group", "filename": "pyatl-peach.svg", "home": "https://pyatl.dev/", "twitter": "pyatl"},
     {"name": "IndyPy", "filename": "indypy.png", "home": "https://indypy.org/", "twitter": "indypy"},
     {"name": "Kiwi PyCon", "filename": "kiwipycon.png", "home": "https://kiwipycon.nz/", "twitter": "kiwipycon"},
@@ -253,7 +250,7 @@
     {"name": "PythonDay México 2018", "filename": "PythonDay México 2018.png", "home": "http://pythonday.mx/", "twitter": "pythondaymx"},
     {"name": "San Diego Python", "filename": "San Diego Python.svg", "home": "https://pythonsd.org", "twitter": "sandiegopython"},
   ];
-  var other_logos=[
+  const other_logos=[
     {"name": "ffmpeg-python", "filename": "ffmpeg-python.png", "home": "https://github.com/kkroening/ffmpeg-python"},
     {"name": "GeoPython Conference", "filename": "GeoPython.jpg", "home": "http://www.geopython.net/", "twitter": "GeoPythonConf"},
     {"name": "Glowing Python", "filename": "GlowingPython.png", "home": "https://glowingpython.blogspot.com/", "twitter": "JustGlowing"},
@@ -268,7 +265,7 @@
   ];
 
   function shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+    let currentIndex = array.length, temporaryValue, randomIndex;
 
     // While there remain elements to shuffle...
     while (0 !== currentIndex) {
@@ -286,40 +283,42 @@
     return array;
   }
 
-  function addLogos($logos, $selector) {
-    shuffle($logos).forEach(function(item) {
-      $($selector).append(`
-      <div class="col-md-3 col-sm-4 col-6">
-        <div class="card mb-3 box-shadow">
-          <a href="${item.home}"><img class="card-img-top" src="img/${item.filename}"></a>
-          <div class="card-body">
-            <p class="card-text">${item.name}</p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-${item.mastodon ? '<a class="btn btn-outline-secondary" role="button" href="' + item.mastodon + '">Mastodon</a></div>' : ''}
-${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https://twitter.com/' + item.twitter + '">Twitter</a></div>' : ''}
+  function addLogos(logos, selector) {
+    shuffle(logos).forEach(function(item) {
+      const html = `
+        <div class="col-md-3 col-sm-4 col-6">
+          <div class="card mb-3 box-shadow">
+            <a href="${item.home}"><img class="card-img-top" src="img/${item.filename}"></a>
+            <div class="card-body">
+              <p class="card-text">${item.name}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  ${item.mastodon ? `<a class="btn btn-outline-secondary" role="button" href="${item.mastodon}">Mastodon</a>` : ''}
+                  ${item.twitter ? `<a class="btn btn-outline-secondary" role="button" href="https://twitter.com/${item.twitter}">Twitter</a>` : ''}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>`
-      );
+      `;
+      document.querySelector(selector).insertAdjacentHTML('beforeend', html);
     });
   }
 
-  addLogos(asia_logos, '#asia-logo-row');
   addLogos(africa_logos, '#africa-logo-row');
+  addLogos(asia_logos, '#asia-logo-row');
   addLogos(europe_logos, '#europe-logo-row');
   addLogos(rest_of_world_logos, '#rest-of-world-logo-row');
   addLogos(south_america_logos, '#south-america-logo-row');
   addLogos(other_logos, '#other-logo-row');
 </script>
 <script>
+  function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+
   (function() {
-    Array.prototype.getRandomVal = function(){
-      return this[Math.floor(Math.random()*this.length)];
-    };
-    var favicons = [
+    const favicons = [
       ...original_logos,
       ...africa_logos,
       ...asia_logos,
@@ -328,11 +327,14 @@ ${item.twitter ? '<a class="btn btn-outline-secondary" role="button" href="https
       ...south_america_logos,
       ...other_logos,
     ];
-    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/x-icon';
-    link.rel = 'shortcut icon';
-    link.href = 'img/' + favicons.getRandomVal()["filename"];
-    document.getElementsByTagName('head')[0].appendChild(link);
+    let link = document.querySelector("link[rel*='icon']");
+    if (!link) {
+      link = document.createElement('link');
+      link.type = 'image/x-icon';
+      link.rel = 'shortcut icon';
+      document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    link.href = 'img/' + getRandomElement(favicons)["filename"];
   })();
 </script>
 </body>

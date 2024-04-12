@@ -1,12 +1,31 @@
 :root {
   --jumbotron-padding-y: 3rem;
+  --bg-color: #fff;
+  --text-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #333;
+    --text-color: #fff;
+  }
+}
+
+body * {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.btn-outline-secondary {
+  color: var(--text-color);
+  outline-color: var(--text-color);
 }
 
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -33,7 +52,9 @@ footer {
 }
 
 footer p {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}

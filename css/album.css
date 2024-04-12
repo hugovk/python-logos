@@ -21,6 +21,15 @@ body * {
   outline-color: var(--text-color);
 }
 
+.octo-arm,
+.octo-body {
+  color: var(--bg-color);
+}
+
+.github-corner {
+  fill: var(--text-color);
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);

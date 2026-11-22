@@ -28,6 +28,8 @@ function addLogos(logos, selector) {
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
               ${item.mastodon ? `<a class="btn btn-outline-secondary" role="button" href="${item.mastodon}">Mastodon</a>` : ''}
+              ${item.bluesky ? `<a class="btn btn-outline-secondary" role="button" href="${item.bluesky}">Bluesky</a>` : ''}
+              ${item.linkedin ? `<a class="btn btn-outline-secondary" role="button" href="${item.linkedin}">LinkedIn</a>` : ''}
               ${item.twitter ? `<a class="btn btn-outline-secondary" role="button" href="https://twitter.com/${item.twitter}">Twitter</a>` : ''}
             </div>
           </div>
